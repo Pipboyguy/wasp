@@ -14,7 +14,7 @@ reactRouterVersion :: SV.ComparatorSet
 reactRouterVersion = SV.backwardsCompatibleWith $ SV.Version 6 26 2
 
 reactQueryVersion :: SV.ComparatorSet
-reactQueryVersion = SV.eq $ SV.Version 4 36 1
+reactQueryVersion = SV.backwardsCompatibleWith $ SV.Version 4 39 1
 
 axiosVersion :: SV.ComparatorSet
 axiosVersion = SV.backwardsCompatibleWith $ SV.Version 1 4 0
@@ -26,4 +26,4 @@ reactTypesVersion :: SV.ComparatorSet
 reactTypesVersion = SV.backwardsCompatibleWith $ SV.Version 18 0 37 -- follows React major version
 
 viteVersion :: SV.ComparatorSet
-viteVersion = SV.backwardsCompatibleWith $ SV.Version 4 3 9
+viteVersion = SV.backwardsCompatibleWith $ SV.Version 7 0 6
